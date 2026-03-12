@@ -3,7 +3,7 @@ import { invalidateColorCache } from './theme-colors';
 export type Theme = 'dark' | 'light';
 export type ThemePreference = 'auto' | 'dark' | 'light';
 
-const STORAGE_KEY = 'worldmonitor-theme';
+const STORAGE_KEY = 'zettabyte-theme';
 const DEFAULT_THEME: Theme = 'dark';
 
 /**
@@ -82,7 +82,7 @@ export function setTheme(theme: Theme): void {
   const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
   if (meta) {
     const variant = document.documentElement.dataset.variant;
-    meta.content = theme === 'dark' ? (variant === 'happy' ? '#1A2332' : '#0a0f0a') : (variant === 'happy' ? '#FAFAF5' : '#f8f9fa');
+    meta.content = theme === 'dark' ? (variant === 'happy' ? '#1A2332' : '#0f0f0e') : (variant === 'happy' ? '#FAFAF5' : '#f5f4f1');
   }
   window.dispatchEvent(new CustomEvent('theme-changed', { detail: { theme } }));
 }
@@ -117,9 +117,9 @@ export function applyStoredTheme(): void {
   const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
   if (meta) {
     if (effective === 'dark') {
-      meta.content = variant === 'happy' ? '#1A2332' : '#0a0f0a';
+      meta.content = variant === 'happy' ? '#1A2332' : '#0f0f0e';
     } else {
-      meta.content = variant === 'happy' ? '#FAFAF5' : '#f8f9fa';
+      meta.content = variant === 'happy' ? '#FAFAF5' : '#f5f4f1';
     }
   }
 }

@@ -1,6 +1,6 @@
 /* ============================================================
-   Happy Variant Theme — Calm & Serene
-   Sage green + warm gold on cream. No dark military aesthetic.
+   Happy Variant Theme — Warm & Cheerful
+   Warm golds + amber on cream. Aligned with Zettabyte warm palette.
    Unlayered CSS — wins over main.css which is wrapped in
    @layer base by base-layer.css (@import ... layer(base)).
    ============================================================ */
@@ -8,53 +8,53 @@
 /* ---------- Happy Light Mode (default + explicit light) ---------- */
 :root[data-variant="happy"],
 :root[data-variant="happy"][data-theme="light"] {
-  /* Backgrounds */
-  --bg: #FAFAF5;
-  --bg-secondary: #F5F3EE;
+  /* Backgrounds — warm cream */
+  --bg: #FAF8F3;
+  --bg-secondary: #F5F1EA;
   --surface: #FFFFFF;
-  --surface-hover: #F5F2EC;
-  --surface-active: #EDE9E0;
+  --surface-hover: #F7F3EC;
+  --surface-active: #F0EBDF;
 
-  /* Borders */
-  --border: #DDD9CF;
-  --border-strong: #C8C2B5;
-  --border-subtle: #EBE8E0;
+  /* Borders — warm sand */
+  --border: #E0D8C8;
+  --border-strong: #C8BEA8;
+  --border-subtle: #EBE6DA;
 
-  /* Text */
-  --text: #2D3A2E;
-  --text-secondary: #4A5A4C;
-  --text-dim: #6B7A6D;
-  --text-muted: #8A9A8C;
-  --text-faint: #A8B4AA;
-  --text-ghost: #C0C8C2;
-  --accent: #3D4A3E;
+  /* Text — warm brown tones */
+  --text: #3A3020;
+  --text-secondary: #564A38;
+  --text-dim: #7A6E58;
+  --text-muted: #9A8E78;
+  --text-faint: #B8AE98;
+  --text-ghost: #D0C8B8;
+  --accent: #3A3020;
 
-  /* Overlays & shadows */
-  --overlay-subtle: rgba(107, 143, 94, 0.03);
-  --overlay-light: rgba(107, 143, 94, 0.05);
-  --overlay-medium: rgba(107, 143, 94, 0.08);
-  --overlay-heavy: rgba(107, 143, 94, 0.12);
-  --shadow-color: rgba(80, 70, 50, 0.08);
-  --darken-light: rgba(80, 70, 50, 0.06);
-  --darken-medium: rgba(80, 70, 50, 0.10);
-  --darken-heavy: rgba(80, 70, 50, 0.15);
+  /* Overlays & shadows — warm amber tint */
+  --overlay-subtle: rgba(196, 163, 90, 0.03);
+  --overlay-light: rgba(196, 163, 90, 0.06);
+  --overlay-medium: rgba(196, 163, 90, 0.10);
+  --overlay-heavy: rgba(196, 163, 90, 0.15);
+  --shadow-color: rgba(80, 60, 30, 0.08);
+  --darken-light: rgba(80, 60, 30, 0.06);
+  --darken-medium: rgba(80, 60, 30, 0.10);
+  --darken-heavy: rgba(80, 60, 30, 0.15);
 
   /* Scrollbar */
-  --scrollbar-thumb: #C8C2B5;
-  --scrollbar-thumb-hover: #A8A298;
+  --scrollbar-thumb: #C8BEA8;
+  --scrollbar-thumb-hover: #A89E88;
 
   /* Input */
-  --input-bg: #F2EFE8;
+  --input-bg: #F2EDE4;
 
   /* Panels */
   --panel-bg: #FFFFFF;
-  --panel-border: #DDD9CF;
+  --panel-border: #E0D8C8;
 
-  /* Map */
-  --map-bg: #D4E6EC;
-  --map-grid: #C0D8D8;
-  --map-country: #B9CDA8;
-  --map-stroke: #C8C0B5;
+  /* Map — warm sandy tones */
+  --map-bg: #EDE8DC;
+  --map-grid: #D6D0C0;
+  --map-country: #F0EAD8;
+  --map-stroke: #C8C0B0;
 
   /* Typography — Nunito rounded sans-serif */
   --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
@@ -62,89 +62,89 @@
   /* Panel border radius — soft rounded corners */
   --panel-radius: 14px;
 
-  /* Severity levels — remapped to positive semantics */
-  --semantic-critical: #C4A35A;
-  --semantic-high: #6B8F5E;
-  --semantic-elevated: #7BA5C4;
-  --semantic-normal: #6B8F5E;
-  --semantic-low: #C48B9F;
-  --semantic-info: #7BA5C4;
-  --semantic-positive: #6B8F5E;
+  /* Severity levels — warm amber/gold positive semantics */
+  --semantic-critical: #D4A03A;
+  --semantic-high: #C4883A;
+  --semantic-elevated: #E0A840;
+  --semantic-normal: #B89830;
+  --semantic-low: #D49B6A;
+  --semantic-info: #C49860;
+  --semantic-positive: #B89830;
 
-  /* Threat levels — remapped to positive tones */
-  --threat-critical: #C4A35A;
-  --threat-high: #8BAF7A;
-  --threat-medium: #7BA5C4;
-  --threat-low: #6B8F5E;
-  --threat-info: #7BA5C4;
+  /* Threat levels — warm amber tones */
+  --threat-critical: #D4A03A;
+  --threat-high: #C4883A;
+  --threat-medium: #E0A840;
+  --threat-low: #B89830;
+  --threat-info: #C49860;
 
-  /* DEFCON levels — warm gradient instead of warning */
-  --defcon-1: #C4A35A;
-  --defcon-2: #A8B86B;
-  --defcon-3: #7BA5C4;
-  --defcon-4: #6B8F5E;
-  --defcon-5: #8BAF7A;
+  /* DEFCON levels — warm gold gradient */
+  --defcon-1: #D4A03A;
+  --defcon-2: #C8A040;
+  --defcon-3: #E0B850;
+  --defcon-4: #B89830;
+  --defcon-5: #C4A850;
 
   /* Status indicators */
-  --status-live: #6B8F5E;
-  --status-cached: #C4A35A;
-  --status-unavailable: #C48B9F;
+  --status-live: #B89830;
+  --status-cached: #D4A03A;
+  --status-unavailable: #D49B6A;
 
   /* Legacy color aliases */
-  --red: #C48B9F;
-  --green: #6B8F5E;
-  --yellow: #C4A35A;
+  --red: #D49B6A;
+  --green: #B89830;
+  --yellow: #D4A03A;
 }
 
 /* ---------- Happy Dark Mode ---------- */
 :root[data-variant="happy"][data-theme="dark"] {
-  /* Backgrounds — deep navy, warm darks */
-  --bg: #1A2332;
-  --bg-secondary: #1E2838;
-  --surface: #222E3E;
-  --surface-hover: #2A3848;
-  --surface-active: #2E3E50;
+  /* Backgrounds — warm deep darks */
+  --bg: #1A1814;
+  --bg-secondary: #201E18;
+  --surface: #28251E;
+  --surface-hover: #322E26;
+  --surface-active: #3A3530;
 
-  /* Borders */
-  --border: #344050;
-  --border-strong: #445868;
-  --border-subtle: #283545;
+  /* Borders — warm dark borders */
+  --border: #3E382E;
+  --border-strong: #504838;
+  --border-subtle: #2E2A22;
 
   /* Text — warm off-whites */
-  --text: #E8E4DC;
-  --text-secondary: #D0CCC4;
-  --text-dim: #A0A098;
-  --text-muted: #808880;
-  --text-faint: #606860;
-  --text-ghost: #485048;
-  --accent: #E8E4DC;
+  --text: #F0EAD8;
+  --text-secondary: #D8D0C0;
+  --text-dim: #A89E88;
+  --text-muted: #887E68;
+  --text-faint: #686050;
+  --text-ghost: #484038;
+  --accent: #F0EAD8;
 
-  /* Overlays & shadows */
-  --overlay-subtle: rgba(139, 175, 122, 0.03);
-  --overlay-light: rgba(139, 175, 122, 0.06);
-  --overlay-medium: rgba(139, 175, 122, 0.10);
-  --overlay-heavy: rgba(139, 175, 122, 0.18);
-  --shadow-color: rgba(0, 0, 0, 0.30);
+  /* Overlays & shadows — warm amber tint */
+  --overlay-subtle: rgba(212, 179, 106, 0.04);
+  --overlay-light: rgba(212, 179, 106, 0.07);
+  --overlay-medium: rgba(212, 179, 106, 0.12);
+  --overlay-heavy: rgba(212, 179, 106, 0.20);
+  --shadow-color: rgba(0, 0, 0, 0.35);
   --darken-light: rgba(0, 0, 0, 0.15);
   --darken-medium: rgba(0, 0, 0, 0.20);
   --darken-heavy: rgba(0, 0, 0, 0.30);
 
   /* Scrollbar */
-  --scrollbar-thumb: #445868;
-  --scrollbar-thumb-hover: #5A6E80;
+  --scrollbar-thumb: #504838;
+  --scrollbar-thumb-hover: #68604A;
 
   /* Input */
-  --input-bg: #283545;
+  --input-bg: #2E2A22;
 
   /* Panels */
-  --panel-bg: #222E3E;
-  --panel-border: #344050;
+  --panel-bg: #28251E;
+  --panel-border: #3E382E;
 
-  /* Map */
-  --map-bg: #16202E;
-  --map-grid: #1E3040;
-  --map-country: #2D4035;
-  --map-stroke: #3D5045;
+  /* Map — warm dark tones */
+  --map-bg: #141210;
+  --map-grid: #28241C;
+  --map-country: #1E1C16;
+  --map-stroke: #3A3428;
 
   /* Typography inherits from light variant selector */
   --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
@@ -152,34 +152,34 @@
   /* Panel border radius */
   --panel-radius: 14px;
 
-  /* Semantic — lighter variants for dark backgrounds */
-  --semantic-critical: #D4B36A;
-  --semantic-high: #8BAF7A;
-  --semantic-elevated: #8BB5D4;
-  --semantic-normal: #8BAF7A;
-  --semantic-low: #D49BAF;
-  --semantic-info: #8BB5D4;
-  --semantic-positive: #8BAF7A;
+  /* Semantic — warm lighter amber/gold for dark backgrounds */
+  --semantic-critical: #E4B84A;
+  --semantic-high: #D4984A;
+  --semantic-elevated: #F0C060;
+  --semantic-normal: #C8A840;
+  --semantic-low: #E4AB7A;
+  --semantic-info: #D4A870;
+  --semantic-positive: #C8A840;
 
-  --threat-critical: #D4B36A;
-  --threat-high: #9BBF8A;
-  --threat-medium: #8BB5D4;
-  --threat-low: #8BAF7A;
-  --threat-info: #8BB5D4;
+  --threat-critical: #E4B84A;
+  --threat-high: #D4984A;
+  --threat-medium: #F0C060;
+  --threat-low: #C8A840;
+  --threat-info: #D4A870;
 
-  --defcon-1: #D4B36A;
-  --defcon-2: #B8C87B;
-  --defcon-3: #8BB5D4;
-  --defcon-4: #8BAF7A;
-  --defcon-5: #9BBF8A;
+  --defcon-1: #E4B84A;
+  --defcon-2: #D8B050;
+  --defcon-3: #F0C860;
+  --defcon-4: #C8A840;
+  --defcon-5: #D4B860;
 
-  --status-live: #8BAF7A;
-  --status-cached: #D4B36A;
-  --status-unavailable: #D49BAF;
+  --status-live: #C8A840;
+  --status-cached: #E4B84A;
+  --status-unavailable: #E4AB7A;
 
-  --red: #D49BAF;
-  --green: #8BAF7A;
-  --yellow: #D4B36A;
+  --red: #E4AB7A;
+  --green: #C8A840;
+  --yellow: #E4B84A;
 }
 
 /* ==========================================================
@@ -217,7 +217,7 @@
 
 /* ---------- Panel resize handle — softer ---------- */
 [data-variant="happy"] .panel-resize-handle {
-  background: linear-gradient(to top, rgba(107, 143, 94, 0.10), transparent);
+  background: linear-gradient(to top, rgba(196, 163, 90, 0.10), transparent);
 }
 
 /* ---------- Map section — rounded ---------- */
@@ -257,7 +257,7 @@
   display: block;
   width: 48px;
   height: 48px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M24 40V24M24 24C20 20 14 18 8 20C14 14 20 14 24 18C28 14 34 14 40 20C34 18 28 20 24 24Z' stroke='%236B8F5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 38C18 38 20 34 24 34C28 34 30 38 30 38' stroke='%236B8F5E' stroke-width='1.5' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M24 40V24M24 24C20 20 14 18 8 20C14 14 20 14 24 18C28 14 34 14 40 20C34 18 28 20 24 24Z' stroke='%23D4A03A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18 38C18 38 20 34 24 34C28 34 30 38 30 38' stroke='%23D4A03A' stroke-width='1.5' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.6;
@@ -267,7 +267,7 @@
    Happy Loading States — Gentle pulse instead of radar sweep
    ========================================================== */
 [data-variant="happy"] .panel-loading-radar {
-  border-color: rgba(107, 143, 94, 0.25);
+  border-color: rgba(212, 160, 58, 0.25);
 }
 
 [data-variant="happy"] .panel-radar-sweep {
@@ -987,7 +987,7 @@
 }
 
 [data-variant='happy'] .badge-recovered {
-  background: rgba(107, 143, 94, 0.15);
+  background: rgba(184, 152, 48, 0.15);
   color: var(--green);
 }
 
@@ -997,7 +997,7 @@
 }
 
 [data-variant='happy'] .badge-stabilized {
-  background: rgba(123, 165, 196, 0.15);
+  background: rgba(196, 152, 96, 0.15);
   color: var(--semantic-info);
 }
 

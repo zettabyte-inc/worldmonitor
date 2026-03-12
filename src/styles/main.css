@@ -2,60 +2,229 @@
 @import './panels.css';
 
 /* ============================================================
+   Suisse Intl — Zettabyte Monitor brand typeface
+   ============================================================ */
+
+/* Hairline (100) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Hairline.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-HairlineIt.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Thin (200) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Thin.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-ThinIt.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light (300) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-LightIt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Book (350) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Book.woff2') format('woff2');
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BookIt.woff2') format('woff2');
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-RegularIt.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-MediumIt.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Semibold (600) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-SemiboldIt.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BoldIt.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Black (900) */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/fonts/SuisseIntl-BlackIt.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ============================================================
    Theme Colors — overridden by [data-theme="light"] below
    ============================================================ */
 :root {
-  /* Backgrounds */
-  --bg: #0a0a0a;
-  --bg-secondary: #111;
-  --surface: #141414;
-  --surface-hover: #1e1e1e;
-  --surface-active: #1a1a2e;
+  /* Backgrounds — luxury deep blacks with warm undertone */
+  --bg: #0f0f0e;
+  --bg-secondary: #131312;
+  --surface: #1a1a18;
+  --surface-hover: #242422;
+  --surface-active: #2a2a28;
 
-  /* Borders */
-  --border: #2a2a2a;
-  --border-strong: #444;
-  --border-subtle: #1a1a1a;
+  /* Borders — warm subtle dark borders */
+  --border: #2e2e2a;
+  --border-strong: #3a3832;
+  --border-subtle: #1e1e1c;
 
-  /* Text */
-  --text: #e8e8e8;
-  --text-secondary: #ccc;
-  --text-dim: #888;
-  --text-muted: #666;
-  --text-faint: #555;
-  --text-ghost: #444;
-  --accent: #fff;
+  /* Text — warm off-white */
+  --text: #f0eeeb;
+  --text-secondary: #d6d3d0;
+  --text-dim: #9a9890;
+  --text-muted: #7a7870;
+  --text-faint: #5a5850;
+  --text-ghost: #3a3830;
+  --accent: #ffffff;
 
   /* Overlays & shadows */
   --overlay-subtle: rgba(255, 255, 255, 0.03);
   --overlay-light: rgba(255, 255, 255, 0.05);
   --overlay-medium: rgba(255, 255, 255, 0.1);
-  --overlay-heavy: rgba(255, 255, 255, 0.2);
-  --shadow-color: rgba(0, 0, 0, 0.5);
-  --darken-light: rgba(0, 0, 0, 0.15);
-  --darken-medium: rgba(0, 0, 0, 0.2);
-  --darken-heavy: rgba(0, 0, 0, 0.3);
+  --overlay-heavy: rgba(255, 255, 255, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.6);
+
+  /* Panels — deep luxury card surfaces */
+  --panel-bg: #1a1a18;
+  --panel-border: #2e2e2a;
+
+  /* Primary blue accent */
+  --primary: #4d94ff;
+  --primary-foreground: #ffffff;
+
+  /* Status colors */
+  --success: #22c55e;
+  --warning: #eab308;
+  --destructive: #ef4444;
+
+  /* Map — warmer */
+  --map-bg: #0a0a09;
+  --map-grid: #1a2a20;
+  --map-country: #121810;
+  --map-stroke: #1a4030;
+
+  /* Glass morphism tokens */
+  --glass-bg: rgba(26, 26, 24, 0.78);
+  --glass-bg-heavy: rgba(26, 26, 24, 0.92);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.07);
+  --glow-primary: rgba(77, 148, 255, 0.22);
+
+  /* Border radius */
+  --radius: 0.625rem;
+  --radius-sm: 0.425rem;
+  --radius-lg: 0.825rem;
+
+  /* Luxury shadow tokens */
+  --shadow-card: 0 0 0 1px rgba(255,255,255,0.07), 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-panel: 0 0 0 1px rgba(255,255,255,0.07), 0 2px 4px rgba(0,0,0,0.5), 0 8px 32px rgba(0,0,0,0.4);
+  --panel-radius: var(--radius);
 
   /* Scrollbar */
-  --scrollbar-thumb: #333;
-  --scrollbar-thumb-hover: #555;
-
-  /* Input */
-  --input-bg: #1a1a1a;
-
-  /* Panels */
-  --panel-bg: #141414;
-  --panel-border: #2a2a2a;
-
-  /* Map */
-  --map-bg: #020a08;
-  --map-grid: #0a2a20;
-  --map-country: #0a2018;
-  --map-stroke: #0f5040;
+  --scrollbar-thumb: #3a3832;
+  --scrollbar-thumb-hover: #5a5850;
 
   /* Font stack */
-  --font-mono: 'SF Mono', 'Monaco', 'Cascadia Code', 'Fira Code', 'DejaVu Sans Mono', 'Liberation Mono', monospace;
-  --font-body: var(--font-mono);
+  --font-suisse: 'Suisse Intl', system-ui, -apple-system, sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Cascadia Code', 'Fira Code', monospace;
+  --font-body: var(--font-suisse);
 }
 
 [dir="rtl"] {
@@ -72,20 +241,20 @@
    ============================================================ */
 :root {
   /* Severity levels */
-  --semantic-critical: #ff4444;
-  --semantic-high: #ff8800;
-  --semantic-elevated: #ffaa00;
-  --semantic-normal: #44aa44;
-  --semantic-low: #3388ff;
-  --semantic-info: #3b82f6;
-  --semantic-positive: #44ff88;
+  --semantic-critical: #ef4444;
+  --semantic-high: #eab308;
+  --semantic-elevated: #f59e0b;
+  --semantic-normal: #22c55e;
+  --semantic-low: #4d94ff;
+  --semantic-info: #4d94ff;
+  --semantic-positive: #34d399;
 
   /* Threat levels */
   --threat-critical: #ef4444;
-  --threat-high: #f97316;
-  --threat-medium: #eab308;
+  --threat-high: #eab308;
+  --threat-medium: #f59e0b;
   --threat-low: #22c55e;
-  --threat-info: #3b82f6;
+  --threat-info: #4d94ff;
 
   /* DEFCON levels */
   --defcon-1: #ff0040;
@@ -110,82 +279,54 @@
    Bright/neon dark-mode colors need darker variants for light backgrounds
    ============================================================ */
 [data-theme="light"] {
-  /* Semantic color overrides — darker variants for light backgrounds */
-  --semantic-high: #ea580c;
-  /* Tailwind orange-600 (was #ff8800, 2.27:1) */
-  --semantic-elevated: #d97706;
-  /* Tailwind amber-600 (was #ffaa00, 1.81:1) */
-  --semantic-normal: #15803d;
-  /* Tailwind green-700 (was #44aa44, 2.81:1) */
-  --semantic-positive: #16a34a;
-  /* Tailwind green-600 (was #44ff88, too bright for light bg) */
-  --threat-high: #c2410c;
-  /* Tailwind orange-700 (was #f97316, 2.66:1) */
-  --threat-medium: #ca8a04;
-  /* Tailwind yellow-600 (was #eab308, 1.82:1) */
-  --threat-low: #15803d;
-  /* Tailwind green-700 (was #22c55e, 2.16:1) */
-  --defcon-3: #d97706;
-  /* Tailwind amber-600 (was #ffaa00, 1.81:1) */
-  --defcon-4: #0284c7;
-  /* Tailwind sky-600 (was #00aaff, 2.43:1) */
-  --status-live: #16a34a;
-  /* Tailwind green-600 (was #44ff88, 1.25:1) */
-  --status-cached: #d97706;
-  /* Tailwind amber-600 (was #ffaa00, 1.81:1) */
-  --green: #16a34a;
-  /* Tailwind green-600 (was #44ff88) */
-  --yellow: #d97706;
-  /* Tailwind amber-600 (was #ffaa00) */
-
-  /* Backgrounds */
-  --bg: #f8f9fa;
-  --bg-secondary: #f0f1f3;
+  --bg: #f5f4f1;
+  --bg-secondary: #eceae6;
   --surface: #ffffff;
-  --surface-hover: #f0f0f0;
-  --surface-active: #e8e8f0;
+  --surface-hover: #f3f2ef;
+  --surface-active: #edf2ff;
 
-  /* Borders */
-  --border: #d4d4d4;
-  --border-strong: #b0b0b0;
-  --border-subtle: #e8e8e8;
+  --border: #dddbd6;
+  --border-strong: #c8c5be;
+  --border-subtle: #e6e4df;
 
-  /* Text */
-  --text: #1a1a1a;
-  --text-secondary: #333;
-  --text-dim: #6b6b6b;
-  --text-muted: #767676;
-  /* WCAG AA: 4.54:1 vs #f8f9fa */
-  --text-faint: #aaa;
-  --text-ghost: #bbb;
+  --text: #171717;
+  --text-secondary: #333333;
+  --text-dim: #64635e;
+  --text-muted: #7a7870;
   --accent: #111111;
 
-  /* Overlays & shadows */
-  --overlay-subtle: rgba(0, 0, 0, 0.02);
-  --overlay-light: rgba(0, 0, 0, 0.04);
-  --overlay-medium: rgba(0, 0, 0, 0.08);
-  --overlay-heavy: rgba(0, 0, 0, 0.12);
-  --shadow-color: rgba(0, 0, 0, 0.1);
-  --darken-light: rgba(0, 0, 0, 0.1);
-  --darken-medium: rgba(0, 0, 0, 0.15);
-  --darken-heavy: rgba(0, 0, 0, 0.2);
-
-  /* Scrollbar */
-  --scrollbar-thumb: #c0c0c0;
-  --scrollbar-thumb-hover: #999;
-
-  /* Input */
-  --input-bg: #f0f0f0;
-
-  /* Panels */
   --panel-bg: #ffffff;
-  --panel-border: #d4d4d4;
+  --panel-border: #dddbd6;
 
-  /* Map */
-  --map-bg: #e8f0f8;
-  --map-grid: #b0c8d8;
-  --map-country: #f0e8d8;
-  --map-stroke: #c8b8a8;
+  --primary: #0052cc;
+  --primary-foreground: #ffffff;
+
+  --success: #16A34A;
+  --warning: #F97316;
+  --destructive: #B91C1C;
+
+  --semantic-critical: #B91C1C;
+  --semantic-high: #F97316;
+  --semantic-normal: #16A34A;
+  --semantic-low: #1D4ED8;
+  --semantic-info: #1D4ED8;
+
+  --glass-bg: rgba(255, 255, 255, 0.76);
+  --glass-bg-heavy: rgba(255, 255, 255, 0.9);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-highlight: rgba(255, 255, 255, 0.75);
+  --glow-primary: rgba(0, 82, 204, 0.18);
+
+  --map-bg: #efeee9;
+  --map-grid: #d6d3ce;
+  --map-country: #f5f4f1;
+  --map-stroke: #c8c5be;
+
+  --shadow-card: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04);
+  --shadow-panel: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.08);
+
+  --scrollbar-thumb: #c8c5be;
+  --scrollbar-thumb-hover: #a8a5a0;
 }
 
 * {
@@ -202,7 +343,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   background: var(--bg);
   color: var(--text);
@@ -1078,6 +1219,8 @@ canvas,
 .panel {
   background: var(--surface);
   border: 1px solid var(--border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -10571,7 +10714,7 @@ a.prediction-link:hover {
     display: none !important;
   }
 
-  /* Mobile: show "World Monitor" instead of "MONITOR" */
+  /* Mobile: show "Zettabyte Monitor" instead of "MONITOR" */
   .logo {
     display: none;
   }

@@ -61,8 +61,8 @@ function htmlVariantPlugin(): Plugin {
         .replace(/<meta name="twitter:url" content=".*?" \/>/, `<meta name="twitter:url" content="${activeMeta.url}" />`)
         .replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${activeMeta.title}" />`)
         .replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${activeMeta.description}" />`)
-        .replace(/"name": "World Monitor"/, `"name": "${activeMeta.siteName}"`)
-        .replace(/"alternateName": "WorldMonitor"/, `"alternateName": "${activeMeta.siteName.replace(' ', '')}"`)
+        .replace(/"name": "Zettabyte Monitor"/, `"name": "${activeMeta.siteName}"`)
+        .replace(/"alternateName": "ZettabyteMonitor"/, `"alternateName": "${activeMeta.siteName.replace(' ', '')}"`)
         .replace(/"url": "https:\/\/worldmonitor\.app\/"/, `"url": "${activeMeta.url}"`)
         .replace(/"description": "Real-time global intelligence dashboard with live news, markets, military tracking, infrastructure monitoring, and geopolitical data."/, `"description": "${activeMeta.description}"`)
         .replace(/"featureList": \[[\s\S]*?\]/, `"featureList": ${JSON.stringify(activeMeta.features, null, 8).replace(/\n/g, '\n      ')}`);
@@ -71,7 +71,7 @@ function htmlVariantPlugin(): Plugin {
       if (activeVariant === 'happy') {
         result = result.replace(
           /<meta name="theme-color" content=".*?" \/>/,
-          '<meta name="theme-color" content="#FAFAF5" />'
+          '<meta name="theme-color" content="#FAF8F3" />'
         );
       }
 
@@ -630,8 +630,8 @@ export default defineConfig({
         scope: '/',
         display: 'standalone',
         orientation: 'any',
-        theme_color: '#0a0f0a',
-        background_color: '#0a0f0a',
+        theme_color: '#0f0f0e',
+        background_color: '#0f0f0e',
         categories: activeMeta.categories,
         icons: [
           { src: '/favico/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
@@ -1194,6 +1194,11 @@ export default defineConfig({
             console.log('ADS-B Exchange proxy error:', err.message);
           });
         },
+      },
+      // Catch-all: proxy remaining /api requests to production edge functions
+      '/api': {
+        target: 'https://api.worldmonitor.app',
+        changeOrigin: true,
       },
     },
   },

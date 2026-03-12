@@ -329,6 +329,11 @@
   --scrollbar-thumb-hover: #a8a5a0;
 }
 
+[data-theme="light"] .variant-option.active {
+  color: var(--primary);
+  background: rgba(0, 82, 204, 0.08);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -409,7 +414,8 @@ canvas,
   justify-content: space-between;
   padding: 8px 16px;
   background: var(--surface);
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
+  box-shadow: inset 0 -2px 0 0 var(--primary), 0 1px 3px rgba(0, 0, 0, 0.1);
   height: 40px;
   flex-shrink: 0;
 }
@@ -497,23 +503,13 @@ canvas,
 }
 
 .variant-option.active {
-  color: var(--green);
-  background: rgba(68, 255, 136, 0.1);
+  color: var(--primary);
+  background: rgba(77, 148, 255, 0.1);
   pointer-events: none;
 }
 
-
 .variant-option.active .variant-icon {
-  filter: grayscale(0%) drop-shadow(0 0 4px var(--green));
-}
-
-.variant-option[data-variant="tech"].active {
-  color: var(--semantic-info);
-  background: rgba(74, 158, 255, 0.1);
-}
-
-.variant-option[data-variant="tech"].active .variant-icon {
-  filter: grayscale(0%) drop-shadow(0 0 4px var(--semantic-info));
+  filter: grayscale(0%) drop-shadow(0 0 4px var(--primary));
 }
 
 .variant-divider {
@@ -529,18 +525,32 @@ canvas,
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .logo-mobile {
   display: none;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: var(--accent);
+  align-items: center;
+  gap: 6px;
+}
+
+.zb-mark {
+  flex-shrink: 0;
+}
+
+.zb-wordmark {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: var(--text);
+  font-family: var(--font-suisse);
+}
+
+@media (max-width: 768px) {
+  .logo { display: none; }
+  .logo-mobile { display: flex; }
 }
 
 .version {
@@ -563,9 +573,9 @@ canvas,
   gap: 12px;
   padding: 12px 14px;
   background: linear-gradient(135deg, #1a2332 0%, #0f1923 100%);
-  border: 1px solid rgba(68, 255, 136, 0.25);
+  border: 1px solid rgba(77, 148, 255, 0.25);
   border-radius: 10px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(68, 255, 136, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(77, 148, 255, 0.08);
   z-index: 10003;
   opacity: 0;
   transform: translateY(-20px);
@@ -588,8 +598,8 @@ canvas,
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(68, 255, 136, 0.12);
-  color: var(--green);
+  background: rgba(77, 148, 255, 0.12);
+  color: var(--primary);
 }
 
 .update-toast-body {

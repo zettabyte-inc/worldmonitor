@@ -1,8 +1,8 @@
 [package]
-name = "world-monitor"
+name = "zettabyte-monitor"
 version = "2.6.0"
-description = "World Monitor desktop application"
-authors = ["World Monitor"]
+description = "Zettabyte Monitor desktop application"
+authors = ["Zettabyte Monitor"]
 edition = "2021"
 
 [build-dependencies]

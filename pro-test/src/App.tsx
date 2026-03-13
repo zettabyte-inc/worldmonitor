@@ -154,7 +154,7 @@ const SlackIcon = () => (
 );
 
 const Logo = () => (
-  <a href="https://worldmonitor.app" className="flex items-center gap-2 hover:opacity-80 transition-opacity" aria-label="World Monitor — Home">
+  <a href="https://worldmonitor.app" className="flex items-center gap-2 hover:opacity-80 transition-opacity" aria-label="Zettabyte Monitor — Home">
     <div className="relative w-8 h-8 rounded-full bg-wm-card border border-wm-border flex items-center justify-center overflow-hidden">
       <Globe className="w-5 h-5 text-wm-blue opacity-50 absolute" aria-hidden="true" />
       <Activity className="w-6 h-6 text-wm-green absolute z-10" aria-hidden="true" />
@@ -431,7 +431,7 @@ const LivePreview = () => (
         <div className="relative aspect-[16/9] bg-black">
           <img
             src={dashboardFallback}
-            alt="World Monitor Dashboard"
+            alt="Zettabyte Monitor Dashboard"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <iframe
@@ -582,7 +582,7 @@ const ProShowcase = () => (
             </div>
             <div>
               <div className="flex items-baseline gap-2 mb-1">
-                <span className="font-bold text-gray-200">World Monitor</span>
+                <span className="font-bold text-gray-200">Zettabyte Monitor</span>
                 <span className="text-xs text-gray-500 bg-gray-800 px-1 rounded">APP</span>
                 <span className="text-xs text-gray-500">8:00 AM</span>
               </div>
@@ -927,9 +927,9 @@ const Footer = () => (
         <Logo />
       </div>
       <div className="flex gap-6">
-        <a href="https://x.com/worldmonitorai" target="_blank" rel="noreferrer" aria-label="Follow World Monitor on X" className="hover:text-wm-text transition-colors">X</a>
-        <a href="https://github.com/koala73/worldmonitor" target="_blank" rel="noreferrer" aria-label="World Monitor on GitHub" className="hover:text-wm-text transition-colors">GitHub</a>
-        <a href="https://www.wired.me/story/the-music-streaming-ceo-who-built-a-global-war-map" target="_blank" rel="noreferrer" aria-label="Read the WIRED article about World Monitor" className="hover:text-wm-text transition-colors">{t('footer.wiredArticle')}</a>
+        <a href="https://x.com/worldmonitorai" target="_blank" rel="noreferrer" aria-label="Follow Zettabyte Monitor on X" className="hover:text-wm-text transition-colors">X</a>
+        <a href="https://github.com/koala73/worldmonitor" target="_blank" rel="noreferrer" aria-label="Zettabyte Monitor on GitHub" className="hover:text-wm-text transition-colors">GitHub</a>
+        <a href="https://www.wired.me/story/the-music-streaming-ceo-who-built-a-global-war-map" target="_blank" rel="noreferrer" aria-label="Read the WIRED article about Zettabyte Monitor" className="hover:text-wm-text transition-colors">{t('footer.wiredArticle')}</a>
       </div>
     </div>
   </footer>
@@ -1102,7 +1102,7 @@ const EnterprisePage = () => (
         </div>
         <div className="flex gap-6">
           <a href="#" onClick={(e) => { e.preventDefault(); window.location.hash = ''; }} className="hover:text-wm-text transition-colors">{t('nav.pro')}</a>
-          <a href="https://x.com/worldmonitorai" target="_blank" rel="noreferrer" aria-label="Follow World Monitor on X" className="hover:text-wm-text transition-colors">X</a>
+          <a href="https://x.com/worldmonitorai" target="_blank" rel="noreferrer" aria-label="Follow Zettabyte Monitor on X" className="hover:text-wm-text transition-colors">X</a>
           <a href="https://github.com/koala73/worldmonitor" target="_blank" rel="noreferrer" className="hover:text-wm-text transition-colors">GitHub</a>
         </div>
       </div>

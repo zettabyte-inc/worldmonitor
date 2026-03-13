@@ -788,7 +788,7 @@
       "empty": "Không có bài viết gần đây cho chủ đề này"
     },
     "geoHubs": {
-      "tooltip": "<strong>Trung tâm Hoạt động Địa chính trị</strong><br>Hiển thị các khu vực có nhiều hoạt động tin tức nhất.<br><br><em>Loại trung tâm:</em><br>• 🏛️ Thủ đô — Thủ đô và trung tâm chính phủ<br>• ⚔️ Vùng Xung đột — Khu vực xung đột đang diễn ra<br>• ⚓ Chiến lược — Điểm nghẽn và khu vực trọng yếu<br>• 🏢 Tổ chức — UN, NATO, IAEA, v.v.<br><br><em>Mức hoạt động:</em><br>• <span style=\"color: #ff4444\">Cao</span> — Tin nóng hoặc điểm 70+<br>• <span style=\"color: #ff8844\">Nâng cao</span> — Điểm 40-69<br>• <span style=\"color: #888\">Thấp</span> — Điểm dưới 40<br><br>Nhấp vào trung tâm để phóng to vị trí.",
+      "tooltip": "<strong>Trung tâm Hoạt động Địa chính trị</strong><br>Hiển thị các khu vực có nhiều hoạt động tin tức nhất.<br><br><em>Loại trung tâm:</em><br>• 🏛️ Thủ đô — Thủ đô và trung tâm chính phủ<br>• ⚔️ Vùng Xung đột — Khu vực xung đột đang diễn ra<br>• ⚓ Chiến lược — Điểm nghẽn và khu vực trọng yếu<br>• 🏢 Tổ chức — UN, NATO, IAEA, v.v.<br><br><em>Mức hoạt động:</em><br>• <span style=\"color: #ef4444\">Cao</span> — Tin nóng hoặc điểm 70+<br>• <span style=\"color: #f59e0b\">Nâng cao</span> — Điểm 40-69<br>• <span style=\"color: #888\">Thấp</span> — Điểm dưới 40<br><br>Nhấp vào trung tâm để phóng to vị trí.",
       "noActive": "Không có trung tâm địa chính trị hoạt động",
       "story": "bài viết",
       "stories": "bài viết",

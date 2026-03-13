@@ -1,4 +1,4 @@
-# World Monitor
+# Zettabyte Monitor
 
 **Real-time global intelligence dashboard** — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface.
 
@@ -29,11 +29,11 @@
   <a href="https://github.com/koala73/worldmonitor/releases/latest"><strong>All Releases</strong></a>
 </p>
 
-![World Monitor Dashboard](docs/images/worldmonitor-7-mar-2026.jpg)
+![Zettabyte Monitor Dashboard](docs/images/worldmonitor-7-mar-2026.jpg)
 
 ---
 
-## Why World Monitor?
+## Why Zettabyte Monitor?
 
 | Problem                            | Solution                                                                                                   |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -56,11 +56,11 @@
 
 | Variant             | URL                                                          | Focus                                            |
 | ------------------- | ------------------------------------------------------------ | ------------------------------------------------ |
-| **World Monitor**   | [worldmonitor.app](https://worldmonitor.app)                 | Geopolitics, military, conflicts, infrastructure |
-| **Tech Monitor**    | [tech.worldmonitor.app](https://tech.worldmonitor.app)       | Startups, AI/ML, cloud, cybersecurity            |
-| **Finance Monitor** | [finance.worldmonitor.app](https://finance.worldmonitor.app) | Global markets, trading, central banks, Gulf FDI |
-| **Commodity Monitor** | [commodity.worldmonitor.app](https://commodity.worldmonitor.app) | Mining, metals, energy commodities, critical minerals |
-| **Happy Monitor**   | [happy.worldmonitor.app](https://happy.worldmonitor.app)     | Good news, positive trends, uplifting stories    |
+| **Zettabyte Monitor**   | [worldmonitor.app](https://worldmonitor.app)                 | Geopolitics, military, conflicts, infrastructure |
+| **Zettabyte Tech**    | [tech.worldmonitor.app](https://tech.worldmonitor.app)       | Startups, AI/ML, cloud, cybersecurity            |
+| **Zettabyte Finance** | [finance.worldmonitor.app](https://finance.worldmonitor.app) | Global markets, trading, central banks, Gulf FDI |
+| **Zettabyte Commodity** | [commodity.worldmonitor.app](https://commodity.worldmonitor.app) | Mining, metals, energy commodities, critical minerals |
+| **Zettabyte Happy**   | [happy.worldmonitor.app](https://happy.worldmonitor.app)     | Good news, positive trends, uplifting stories    |
 
 All five variants run from a single codebase — switch between them with one click via the header bar.
 
@@ -221,14 +221,14 @@ All five variants run from a single codebase — switch between them with one cl
 
 A single codebase produces five specialized dashboards, each with distinct feeds, panels, map layers, and branding:
 
-| Aspect                | World Monitor                                        | Tech Monitor                                    | Finance Monitor                                  | Commodity Monitor                                         | Happy Monitor                                         |
+| Aspect                | Zettabyte Monitor                                    | Zettabyte Tech                                  | Zettabyte Finance                                | Zettabyte Commodity                                       | Zettabyte Happy                                       |
 | --------------------- | ---------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------- |
 | **Domain**            | worldmonitor.app                                     | tech.worldmonitor.app                           | finance.worldmonitor.app                         | commodity.worldmonitor.app                                | happy.worldmonitor.app                                |
 | **Focus**             | Geopolitics, military, conflicts                     | AI/ML, startups, cybersecurity                  | Markets, trading, central banks                  | Mining, metals, energy commodities, critical minerals     | Good news, conservation, human progress               |
 | **RSS Feeds**         | 15 categories, 200+ feeds (politics, MENA, Africa, think tanks) | 21 categories, 152 feeds (AI, VC blogs, startups, GitHub) | 14 categories, 55 feeds (forex, bonds, commodities, IPOs) | 10 categories, 50+ feeds (gold/silver, energy, mining, critical minerals, base metals) | 5 categories, 21 positive-news sources (GNN, Positive.News, Upworthy) |
 | **Panels**            | 45 (strategic posture, CII, cascade, trade policy, airline intel, predictions) | 28 (AI labs, unicorns, accelerators, tech readiness) | 27 (forex, bonds, derivatives, trade policy, gulf economies) | 16 (live prices, sector heatmap, gold/silver, energy, mining, critical minerals, base metals, supply chain) | 10 (good news, breakthroughs, conservation, renewables, giving) |
 | **Unique Map Layers** | Military bases, nuclear facilities, hotspots         | Tech HQs, cloud regions, startup hubs           | Stock exchanges, central banks, Gulf investments | Mine sites, processing plants, commodity ports, commodity hubs, pipelines, trade routes | Positive events, kindness, species recovery, renewables |
-| **Desktop App**       | World Monitor.app / .exe / .AppImage                 | Tech Monitor.app / .exe / .AppImage             | Finance Monitor.app / .exe / .AppImage           | (web-only)                                                | (web-only)                                            |
+| **Desktop App**       | Zettabyte Monitor.app / .exe / .AppImage             | Zettabyte Tech.app / .exe / .AppImage           | Zettabyte Finance.app / .exe / .AppImage         | (web-only)                                                | (web-only)                                            |
 
 Single-deployment consolidation — all five variants serve from one Vercel deployment, determined by hostname. Build-time `VITE_VARIANT` tree-shakes unused data. Runtime variant selector in the header bar.
 
@@ -346,7 +346,7 @@ See [`.env.example`](./.env.example) for the complete list with registration lin
 
 ## Self-Hosting
 
-World Monitor relies on **60+ Vercel Edge Functions** in the `api/` directory for RSS proxying, data caching, and API key isolation. Running `npm run dev` alone starts only the Vite frontend — the edge functions won't execute, and most panels (news feeds, markets, AI summaries) will be empty.
+Zettabyte Monitor relies on **60+ Vercel Edge Functions** in the `api/` directory for RSS proxying, data caching, and API key isolation. Running `npm run dev` alone starts only the Vite frontend — the edge functions won't execute, and most panels (news feeds, markets, AI summaries) will be empty.
 
 ### Option 1: Deploy to Vercel (Recommended)
 
@@ -459,12 +459,12 @@ npm run build:happy      # Build happy variant
 npm run typecheck    # TypeScript type checking (tsc --noEmit)
 
 # Desktop packaging
-npm run desktop:package:macos:full      # .app + .dmg (World Monitor)
-npm run desktop:package:macos:tech      # .app + .dmg (Tech Monitor)
-npm run desktop:package:macos:finance   # .app + .dmg (Finance Monitor)
-npm run desktop:package:windows:full    # .exe + .msi (World Monitor)
-npm run desktop:package:windows:tech    # .exe + .msi (Tech Monitor)
-npm run desktop:package:windows:finance # .exe + .msi (Finance Monitor)
+npm run desktop:package:macos:full      # .app + .dmg (Zettabyte Monitor)
+npm run desktop:package:macos:tech      # .app + .dmg (Zettabyte Tech)
+npm run desktop:package:macos:finance   # .app + .dmg (Zettabyte Finance)
+npm run desktop:package:windows:full    # .exe + .msi (Zettabyte Monitor)
+npm run desktop:package:windows:tech    # .exe + .msi (Zettabyte Tech)
+npm run desktop:package:windows:finance # .exe + .msi (Zettabyte Finance)
 
 # Generic packaging runner
 npm run desktop:package -- --os macos --variant full
@@ -496,7 +496,7 @@ See [full roadmap](./docs/DOCUMENTATION.md#roadmap).
 
 ## Support the Project
 
-If you find World Monitor useful:
+If you find Zettabyte Monitor useful:
 
 - **Star this repo** to help others discover it
 - **Share** with colleagues interested in OSINT
@@ -513,7 +513,7 @@ This project is licensed under the **GNU Affero General Public License v3.0 (AGP
 
 **You are free to:**
 
-- **Use** — run World Monitor for any purpose, including commercial use
+- **Use** — run Zettabyte Monitor for any purpose, including commercial use
 - **Study** — read, audit, and learn from the source code
 - **Modify** — adapt, extend, and build upon the code
 - **Distribute** — share copies with anyone
@@ -540,13 +540,7 @@ This project is licensed under the **GNU Affero General Public License v3.0 (AGP
 
 **No warranty** — the software is provided "as is" without warranty of any kind.
 
-Copyright (C) 2024-2026 Elie Habib. All rights reserved under AGPL-3.0.
-
----
-
-## Author
-
-**Elie Habib** — [GitHub](https://github.com/koala73)
+Copyright (C) 2024-2026 World Monitor. All rights reserved under AGPL-3.0.
 
 ---
 

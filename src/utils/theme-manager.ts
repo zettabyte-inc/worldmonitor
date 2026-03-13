@@ -4,7 +4,7 @@ export type Theme = 'dark' | 'light';
 export type ThemePreference = 'auto' | 'dark' | 'light';
 
 const STORAGE_KEY = 'zettabyte-theme';
-const DEFAULT_THEME: Theme = 'dark';
+const DEFAULT_THEME: Theme = 'light';
 
 /**
  * Read the stored theme preference from localStorage.
@@ -82,7 +82,7 @@ export function setTheme(theme: Theme): void {
   const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
   if (meta) {
     const variant = document.documentElement.dataset.variant;
-    meta.content = theme === 'dark' ? (variant === 'happy' ? '#1A2332' : '#0f0f0e') : (variant === 'happy' ? '#FAFAF5' : '#f5f4f1');
+    meta.content = theme === 'dark' ? (variant === 'happy' ? '#1A1814' : '#0f0f0e') : (variant === 'happy' ? '#FAF8F3' : '#f5f4f1');
   }
   window.dispatchEvent(new CustomEvent('theme-changed', { detail: { theme } }));
 }

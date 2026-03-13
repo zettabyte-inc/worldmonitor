@@ -437,9 +437,9 @@ export function getIranEventCssColor(ev: Pick<IranEvent, 'severity' | 'category'
 }
 
 export function getIranEventHexColor(ev: Pick<IranEvent, 'severity'>): string {
-  if (ev.severity === 'high' || ev.severity === 'critical') return '#ff3030';
-  if (ev.severity === 'elevated') return '#ff8800';
-  return '#ffcc00';
+  if (ev.severity === 'high' || ev.severity === 'critical') return '#ef4444';
+  if (ev.severity === 'elevated') return '#f59e0b';
+  return '#fbbf24';
 }
 
 export function getIranEventRadius(severity: string): number {

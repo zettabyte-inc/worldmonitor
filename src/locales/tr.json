@@ -788,7 +788,7 @@
       "empty": "Bu konu icin son makale yok"
     },
     "geoHubs": {
-      "tooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>• 🏛️ Baskentler — Dunya baskentleri ve hukumet merkezleri<br>• ⚔️ Catisma Bolgeleri — Aktif catisma alanlari<br>• ⚓ Stratejik — Darbogazlar ve kilit bolgeler<br>• 🏢 Kuruluslar — BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: #ff4444\">Yuksek</span> — Son dakika haberleri veya 70+ puan<br>• <span style=\"color: #ff8844\">Artmis</span> — 40-69 puan<br>• <span style=\"color: #888\">Dusuk</span> — 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
+      "tooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>• 🏛️ Baskentler — Dunya baskentleri ve hukumet merkezleri<br>• ⚔️ Catisma Bolgeleri — Aktif catisma alanlari<br>• ⚓ Stratejik — Darbogazlar ve kilit bolgeler<br>• 🏢 Kuruluslar — BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: #ef4444\">Yuksek</span> — Son dakika haberleri veya 70+ puan<br>• <span style=\"color: #f59e0b\">Artmis</span> — 40-69 puan<br>• <span style=\"color: #888\">Dusuk</span> — 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
       "noActive": "Aktif jeopolitik merkez yok",
       "story": "haber",
       "stories": "haber",

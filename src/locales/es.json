@@ -778,7 +778,7 @@
       "empty": "No hay artículos recientes para este tema."
     },
     "geoHubs": {
-      "tooltip": "<strong>Centros de actividades geopolíticas</strong><br>Muestra las regiones con mayor actividad noticiosa.<br><br><em>Tipos de centros:</em><br>• 🏛️ Capitales: capitales mundiales y centros gubernamentales<br>• ⚔️ Zonas de conflicto: áreas de conflicto activas<br>• ⚓ Estratégicas: puntos críticos y regiones clave<br>• 🏢 Organizaciones: ONU, OTAN, OIEA, etc.<br><br><em>Niveles de actividad:</em><br>• <span style=\"color: #ff4444\">Alto</span> — Noticias de última hora o puntuación de 70+<br>• <span style=\"color: #ff8844\">Elevado</span> — Puntuación 40-69<br>• <span style=\"color: #888\">Baja</span> — Puntuación inferior 40<br><br>Haga clic en un centro para ampliar su ubicación.",
+      "tooltip": "<strong>Centros de actividades geopolíticas</strong><br>Muestra las regiones con mayor actividad noticiosa.<br><br><em>Tipos de centros:</em><br>• 🏛️ Capitales: capitales mundiales y centros gubernamentales<br>• ⚔️ Zonas de conflicto: áreas de conflicto activas<br>• ⚓ Estratégicas: puntos críticos y regiones clave<br>• 🏢 Organizaciones: ONU, OTAN, OIEA, etc.<br><br><em>Niveles de actividad:</em><br>• <span style=\"color: #ef4444\">Alto</span> — Noticias de última hora o puntuación de 70+<br>• <span style=\"color: #f59e0b\">Elevado</span> — Puntuación 40-69<br>• <span style=\"color: #888\">Baja</span> — Puntuación inferior 40<br><br>Haga clic en un centro para ampliar su ubicación.",
       "noActive": "No hay centros geopolíticos activos",
       "story": "historia",
       "stories": "historias",

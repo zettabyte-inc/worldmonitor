@@ -792,8 +792,8 @@
 }
 
 .giving-fresh-live {
-  background: color-mix(in srgb, var(--semantic-positive, #44ff88) 15%, transparent);
-  color: var(--semantic-positive, #44ff88);
+  background: color-mix(in srgb, var(--semantic-positive, #34d399) 15%, transparent);
+  color: var(--semantic-positive, #34d399);
 }
 
 .giving-fresh-daily {
@@ -845,8 +845,8 @@
   font-weight: 700;
   padding: 1px 4px;
   border-radius: 2px;
-  background: color-mix(in srgb, var(--semantic-positive, #44ff88) 12%, transparent);
-  color: var(--semantic-positive, #44ff88);
+  background: color-mix(in srgb, var(--semantic-positive, #34d399) 12%, transparent);
+  color: var(--semantic-positive, #34d399);
   letter-spacing: 0.5px;
   vertical-align: middle;
   margin-left: 4px;
@@ -1537,8 +1537,8 @@
 }
 
 .wc-row.wc-home {
-  background: color-mix(in srgb, var(--semantic-positive, #44ff88) 8%, transparent);
-  border-left: 2px solid color-mix(in srgb, var(--semantic-positive, #44ff88) 40%, transparent);
+  background: color-mix(in srgb, var(--semantic-positive, #34d399) 8%, transparent);
+  border-left: 2px solid color-mix(in srgb, var(--semantic-positive, #34d399) 40%, transparent);
 }
 
 .wc-drag-handle {
@@ -1585,7 +1585,7 @@
 .wc-home-tag {
   margin-left: 4px;
   font-size: 11px;
-  color: var(--semantic-positive, #44ff88);
+  color: var(--semantic-positive, #34d399);
 }
 
 .wc-detail {
@@ -1611,7 +1611,7 @@
 }
 
 .wc-status.open {
-  color: var(--semantic-positive, #44ff88);
+  color: var(--semantic-positive, #34d399);
 }
 
 .wc-status.closed {
@@ -1626,7 +1626,7 @@
 }
 
 .wc-dot.open {
-  background: var(--semantic-positive, #44ff88);
+  background: var(--semantic-positive, #34d399);
 }
 
 .wc-dot.closed {

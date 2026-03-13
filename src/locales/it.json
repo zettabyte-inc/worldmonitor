@@ -778,7 +778,7 @@
       "empty": "Nessun articolo recente per questo argomento"
     },
     "geoHubs": {
-      "tooltip": "<strong>Hub di attività geopolitiche</strong><br>Mostra le regioni con la maggior parte dell'attività di notizie.<br><br><em>Tipi di hub:</em><br>• 🏛️ Capitali: capitali mondiali e centri governativi<br>• ⚔️ Zone di conflitto: aree di conflitto attive<br>• ⚓ Strategiche: punti di strozzatura e punti chiave regioni<br>• 🏢 Organizzazioni: ONU, NATO, AIEA, ecc.<br><br><em>Livelli di attività:</em><br>• <span style=\"color: #ff4444\">Alto</span> — Ultime notizie o punteggio 70+<br>• <span style=\"color: #ff8844\">Elevated</span> — Punteggio 40-69<br>• <span style=\"color: #888\">Low</span> — Punteggio inferiore a 40<br><br>Fai clic su un hub per ingrandire la sua posizione.",
+      "tooltip": "<strong>Hub di attività geopolitiche</strong><br>Mostra le regioni con la maggior parte dell'attività di notizie.<br><br><em>Tipi di hub:</em><br>• 🏛️ Capitali: capitali mondiali e centri governativi<br>• ⚔️ Zone di conflitto: aree di conflitto attive<br>• ⚓ Strategiche: punti di strozzatura e punti chiave regioni<br>• 🏢 Organizzazioni: ONU, NATO, AIEA, ecc.<br><br><em>Livelli di attività:</em><br>• <span style=\"color: #ef4444\">Alto</span> — Ultime notizie o punteggio 70+<br>• <span style=\"color: #f59e0b\">Elevated</span> — Punteggio 40-69<br>• <span style=\"color: #888\">Low</span> — Punteggio inferiore a 40<br><br>Fai clic su un hub per ingrandire la sua posizione.",
       "noActive": "Nessun hub geopolitico attivo",
       "story": "storia",
       "stories": "storie",

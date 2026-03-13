@@ -761,7 +761,7 @@
       "empty": "Aucun article récent pour ce sujet"
     },
     "geoHubs": {
-      "tooltip": "<strong>Points Chauds Géopolitiques</strong><br>Affiche les régions avec le plus d'activité.<br><br><em>Types:</em><br>• 🏛️ Capitales<br>• ⚔️ Zones de Conflit<br>• ⚓ Stratégique<br>• 🏢 Organisations<br><br><em>Niveaux:</em><br>• <span style=\"color: #ff4444\">Élevé</span> — Breaking news ou score 70+<br>• <span style=\"color: #ff8844\">Élevé</span> — Score 40-69<br>• <span style=\"color: #888\">Faible</span> — Score < 40",
+      "tooltip": "<strong>Points Chauds Géopolitiques</strong><br>Affiche les régions avec le plus d'activité.<br><br><em>Types:</em><br>• 🏛️ Capitales<br>• ⚔️ Zones de Conflit<br>• ⚓ Stratégique<br>• 🏢 Organisations<br><br><em>Niveaux:</em><br>• <span style=\"color: #ef4444\">Élevé</span> — Breaking news ou score 70+<br>• <span style=\"color: #f59e0b\">Élevé</span> — Score 40-69<br>• <span style=\"color: #888\">Faible</span> — Score < 40",
       "noActive": "Aucun point chaud actif",
       "story": "article",
       "stories": "articles",

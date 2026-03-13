@@ -788,7 +788,7 @@
       "empty": "Nu există articole recente pentru acest subiect"
     },
     "geoHubs": {
-      "tooltip": "<strong>Huburi de activitate geopolitica</strong><br>Afiseaza regiunile cu cea mai mare activitate de stiri.<br><br><em>Tipuri de huburi:</em><br>• 🏛️ Capitale — Capitale mondiale si centre guvernamentale<br>• ⚔️ Zone de conflict — Zone de conflict active<br>• ⚓ Strategice — Chokepoints si regiuni-cheie<br>• 🏢 Organizatii — ONU, NATO, IAEA etc.<br><br><em>Niveluri de activitate:</em><br>• <span style=\"color: #ff4444\">Ridicat</span> — Stiri de ultima ora sau scor 70+<br>• <span style=\"color: #ff8844\">Crescut</span> — Scor 40-69<br>• <span style=\"color: #888\">Scazut</span> — Scor sub 40<br><br>Apasa pe un hub pentru a mari zona sa.",
+      "tooltip": "<strong>Huburi de activitate geopolitica</strong><br>Afiseaza regiunile cu cea mai mare activitate de stiri.<br><br><em>Tipuri de huburi:</em><br>• 🏛️ Capitale — Capitale mondiale si centre guvernamentale<br>• ⚔️ Zone de conflict — Zone de conflict active<br>• ⚓ Strategice — Chokepoints si regiuni-cheie<br>• 🏢 Organizatii — ONU, NATO, IAEA etc.<br><br><em>Niveluri de activitate:</em><br>• <span style=\"color: #ef4444\">Ridicat</span> — Stiri de ultima ora sau scor 70+<br>• <span style=\"color: #f59e0b\">Crescut</span> — Scor 40-69<br>• <span style=\"color: #888\">Scazut</span> — Scor sub 40<br><br>Apasa pe un hub pentru a mari zona sa.",
       "noActive": "Nu există centre geopolitice active",
       "story": "articol",
       "stories": "articole",

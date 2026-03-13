@@ -194,11 +194,11 @@
   --warning: #eab308;
   --destructive: #ef4444;
 
-  /* Map — warmer */
+  /* Map — warm neutral */
   --map-bg: #0a0a09;
-  --map-grid: #1a2a20;
-  --map-country: #121810;
-  --map-stroke: #1a4030;
+  --map-grid: #1e1e1c;
+  --map-country: #131312;
+  --map-stroke: #2e2e2a;
 
   /* Glass morphism tokens */
   --glass-bg: rgba(26, 26, 24, 0.78);
@@ -212,9 +212,9 @@
   --radius-sm: 0.425rem;
   --radius-lg: 0.825rem;
 
-  /* Luxury shadow tokens */
-  --shadow-card: 0 0 0 1px rgba(255,255,255,0.07), 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3);
-  --shadow-panel: 0 0 0 1px rgba(255,255,255,0.07), 0 2px 4px rgba(0,0,0,0.5), 0 8px 32px rgba(0,0,0,0.4);
+  /* Luxury shadow tokens — multi-layer depth */
+  --shadow-card: 0 0 0 1px rgba(255,255,255,0.07), 0 1px 2px rgba(0,0,0,0.4), 0 4px 16px rgba(0,0,0,0.3), 0 16px 48px rgba(0,0,0,0.15);
+  --shadow-panel: 0 0 0 1px rgba(255,255,255,0.07), 0 2px 4px rgba(0,0,0,0.5), 0 8px 32px rgba(0,0,0,0.4), 0 20px 50px rgba(0,0,0,0.2);
   --panel-radius: var(--radius);
 
   /* Scrollbar */
@@ -263,15 +263,15 @@
   --defcon-4: #00aaff;
   --defcon-5: #2d8a6e;
 
-  /* Status indicators */
-  --status-live: #44ff88;
-  --status-cached: #ffaa00;
-  --status-unavailable: #ff4444;
+  /* Status indicators — refined */
+  --status-live: #34d399;
+  --status-cached: #eab308;
+  --status-unavailable: #ef4444;
 
   /* Legacy color aliases (used by existing var() references) */
-  --red: #ff4444;
-  --green: #44ff88;
-  --yellow: #ffaa00;
+  --red: #ef4444;
+  --green: #34d399;
+  --yellow: #eab308;
 }
 
 /* ============================================================
@@ -322,8 +322,8 @@
   --map-country: #f5f4f1;
   --map-stroke: #c8c5be;
 
-  --shadow-card: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04);
-  --shadow-panel: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.08);
+  --shadow-card: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.02);
+  --shadow-panel: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1), 0 6px 20px rgba(0,0,0,0.08), 0 20px 50px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8);
 
   --scrollbar-thumb: #c8c5be;
   --scrollbar-thumb-hover: #a8a5a0;
@@ -349,7 +349,12 @@ html {
 body {
   font-family: var(--font-body);
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.5;
+  letter-spacing: -0.01em;
+  font-feature-settings: "ss01" on, "ss02" on, "cv01" on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: var(--bg);
   color: var(--text);
   overflow: hidden;
@@ -527,25 +532,15 @@ canvas,
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .logo-mobile {
   display: none;
   align-items: center;
-  gap: 6px;
 }
 
-.zb-mark {
+.zb-logo-full {
   flex-shrink: 0;
-}
-
-.zb-wordmark {
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 3px;
-  color: var(--text);
-  font-family: var(--font-suisse);
 }
 
 @media (max-width: 768px) {
@@ -3118,7 +3113,7 @@ body.live-news-fullscreen-active .panels-grid > *:not(.live-news-fullscreen) {
 
 .country-intel-share-btn {
   background: none;
-  border: 1px solid #ff444440;
+  border: 1px solid rgba(239, 68, 68, 0.25);
   color: var(--semantic-critical);
   font-size: 16px;
   cursor: pointer;
@@ -5334,7 +5329,7 @@ body.playback-mode .status-dot {
   height: 8px;
   border-radius: 50%;
   background: var(--status-live);
-  box-shadow: 0 0 6px var(--status-live), 0 0 12px #00ffaa40;
+  box-shadow: 0 0 6px var(--status-live), 0 0 12px rgba(52, 211, 153, 0.25);
   z-index: 51;
   cursor: pointer;
   border: 1px solid var(--semantic-normal);
@@ -5342,7 +5337,7 @@ body.playback-mode .status-dot {
 
 .irradiator-marker:hover {
   background: var(--status-live);
-  box-shadow: 0 0 10px var(--status-live), 0 0 20px #00ffaa60;
+  box-shadow: 0 0 10px var(--status-live), 0 0 20px rgba(52, 211, 153, 0.38);
 }
 
 .irradiator-label {
@@ -7400,7 +7395,7 @@ a.prediction-link:hover {
 }
 
 .mineral-marker.producing .mineral-icon {
-  filter: drop-shadow(0 0 6px var(--status-live)) drop-shadow(0 0 12px #44ff8860);
+  filter: drop-shadow(0 0 6px var(--status-live)) drop-shadow(0 0 12px rgba(52, 211, 153, 0.38));
 }
 
 .mineral-marker.developing .mineral-icon {
@@ -7682,7 +7677,7 @@ a.prediction-link:hover {
 
 .tech-hq-marker.faang .tech-hq-icon {
   font-size: 16px;
-  filter: drop-shadow(0 0 6px var(--status-live)) drop-shadow(0 0 12px #00ffaa60);
+  filter: drop-shadow(0 0 6px var(--status-live)) drop-shadow(0 0 12px rgba(52, 211, 153, 0.38));
 }
 
 .tech-hq-marker.unicorn .tech-hq-icon {
@@ -7887,7 +7882,7 @@ a.prediction-link:hover {
 }
 
 .accelerator-marker.accelerator .accelerator-icon {
-  filter: drop-shadow(0 0 6px var(--semantic-high)) drop-shadow(0 0 12px #ff660060);
+  filter: drop-shadow(0 0 6px var(--semantic-high)) drop-shadow(0 0 12px rgba(234, 179, 8, 0.38));
 }
 
 .accelerator-marker.incubator .accelerator-icon {
@@ -8544,7 +8539,7 @@ a.prediction-link:hover {
 }
 
 .search-result-item.command-item {
-  border-left: 2px solid var(--semantic-normal, #4488ff);
+  border-left: 2px solid var(--semantic-normal, #4d94ff);
 }
 
 .search-result-item.command-item .search-result-type {
@@ -8701,7 +8696,7 @@ a.prediction-link:hover {
     right: 16px;
     width: 56px;
     height: 56px;
-    background: var(--accent, #4488ff);
+    background: var(--accent, #4d94ff);
     border: none;
     border-radius: 50%;
     box-shadow: 0 4px 20px rgba(68, 136, 255, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -8773,7 +8768,7 @@ a.prediction-link:hover {
 .search-sheet-cancel {
   background: none;
   border: none;
-  color: var(--accent, #4488ff);
+  color: var(--accent, #4d94ff);
   font-size: 20px;
   font-family: inherit;
   cursor: pointer;
@@ -10253,10 +10248,9 @@ a.prediction-link:hover {
 }
 
 .mobile-menu-title {
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: var(--accent);
+  display: flex;
+  align-items: center;
+  color: var(--text);
 }
 
 .mobile-menu-close {
@@ -13922,7 +13916,7 @@ a.prediction-link:hover {
   width: 200px;
   height: 100px;
   border-radius: 50%;
-  background: #ffaa00;
+  background: var(--warning);
   filter: blur(50px);
   opacity: 0.08;
   pointer-events: none;
@@ -13939,14 +13933,14 @@ a.prediction-link:hover {
 }
 
 .layer-warn-icon {
-  color: #ffaa00;
+  color: var(--warning);
   line-height: 1;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 170, 0, 0.1);
+  background: rgba(234, 179, 8, 0.1);
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -13958,7 +13952,7 @@ a.prediction-link:hover {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.3px;
-  color: #ffaa00;
+  color: var(--warning);
   margin-bottom: 6px;
 }
 
@@ -13981,7 +13975,7 @@ a.prediction-link:hover {
 }
 
 .layer-warn-dismiss input {
-  accent-color: #ffaa00;
+  accent-color: var(--warning);
   cursor: pointer;
 }
 
@@ -13989,10 +13983,10 @@ a.prediction-link:hover {
   padding: 7px 0;
   width: 100%;
   max-width: 200px;
-  background: rgba(255, 170, 0, 0.12);
-  border: 1px solid rgba(255, 170, 0, 0.2);
+  background: rgba(234, 179, 8, 0.12);
+  border: 1px solid rgba(234, 179, 8, 0.2);
   border-radius: 6px;
-  color: #ffaa00;
+  color: var(--warning);
   font-family: var(--font-mono, 'SF Mono', monospace);
   font-size: 11px;
   font-weight: 700;

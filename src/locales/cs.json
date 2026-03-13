@@ -778,7 +778,7 @@
       "empty": "K tomuto tématu nejsou žádné nedávné články"
     },
     "geoHubs": {
-      "tooltip": "<strong>Centra geopolitické aktivity</strong><br>Zobrazuje regiony s největší zpravodajskou aktivitou.<br><br><em>Typy center:</em><br>• 🏛️ Hlavní města — Světová hlavní města a vládní centra<br>• ⚔️ Zóny konfliktu — Aktivní oblasti konfliktu<br>• ⚓ Strategické — Úzká hrdla a klíčové regiony<br>• 🏢 Organizace — OSN, NATO, IAEA atd.<br><br><em>Úrovně aktivity:</em><br>• <span style=\"color: #ff4444\">Vysoká</span> — Bleskové zprávy nebo skóre 70+<br>• <span style=\"color: #ff8844\">Zvýšená</span> — Skóre 40-69<br>• <span style=\"color: #888\">Nízká</span> — Skóre pod 40<br><br>Kliknutím na centrum se přiblížíte na jeho polohu.",
+      "tooltip": "<strong>Centra geopolitické aktivity</strong><br>Zobrazuje regiony s největší zpravodajskou aktivitou.<br><br><em>Typy center:</em><br>• 🏛️ Hlavní města — Světová hlavní města a vládní centra<br>• ⚔️ Zóny konfliktu — Aktivní oblasti konfliktu<br>• ⚓ Strategické — Úzká hrdla a klíčové regiony<br>• 🏢 Organizace — OSN, NATO, IAEA atd.<br><br><em>Úrovně aktivity:</em><br>• <span style=\"color: #ef4444\">Vysoká</span> — Bleskové zprávy nebo skóre 70+<br>• <span style=\"color: #f59e0b\">Zvýšená</span> — Skóre 40-69<br>• <span style=\"color: #888\">Nízká</span> — Skóre pod 40<br><br>Kliknutím na centrum se přiblížíte na jeho polohu.",
       "noActive": "Žádná aktivní geopolitická centra",
       "story": "příběh",
       "stories": "příběhy",

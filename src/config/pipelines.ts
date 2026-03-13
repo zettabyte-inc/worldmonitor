@@ -1030,6 +1030,6 @@ export function getPipelineStatusColor(status: string): string {
 
 // Pipeline status colors — kept for backward compatibility (DeckGL RGB conversion)
 export const PIPELINE_STATUS_COLORS: Record<string, string> = {
-  operating: '#44ff88',
-  construction: '#ffaa00',
+  operating: '#34d399',
+  construction: '#eab308',
 };

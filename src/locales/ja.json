@@ -788,7 +788,7 @@
       "empty": "このトピックの最新記事なし"
     },
     "geoHubs": {
-      "tooltip": "<strong>地政学アクティビティハブ</strong><br>ニュース活動が最も活発な地域を表示。<br><br><em>ハブタイプ:</em><br>• 🏛️ 首都 — 世界の首都・政府中枢<br>• ⚔️ 紛争地帯 — アクティブな紛争地域<br>• ⚓ 戦略拠点 — チョークポイント・主要地域<br>• 🏢 国際機関 — UN、NATO、IAEAなど<br><br><em>活動レベル:</em><br>• <span style=\"color: #ff4444\">高</span> — 速報または70+スコア<br>• <span style=\"color: #ff8844\">上昇</span> — スコア40-69<br>• <span style=\"color: #888\">低</span> — スコア40未満<br><br>ハブをクリックするとその場所にズーム。",
+      "tooltip": "<strong>地政学アクティビティハブ</strong><br>ニュース活動が最も活発な地域を表示。<br><br><em>ハブタイプ:</em><br>• 🏛️ 首都 — 世界の首都・政府中枢<br>• ⚔️ 紛争地帯 — アクティブな紛争地域<br>• ⚓ 戦略拠点 — チョークポイント・主要地域<br>• 🏢 国際機関 — UN、NATO、IAEAなど<br><br><em>活動レベル:</em><br>• <span style=\"color: #ef4444\">高</span> — 速報または70+スコア<br>• <span style=\"color: #f59e0b\">上昇</span> — スコア40-69<br>• <span style=\"color: #888\">低</span> — スコア40未満<br><br>ハブをクリックするとその場所にズーム。",
       "noActive": "アクティブな地政学ハブなし",
       "story": "件",
       "stories": "件",

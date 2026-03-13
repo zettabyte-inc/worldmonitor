@@ -13,10 +13,10 @@ export interface TimelineEvent {
 const LANES: TimelineEvent['lane'][] = ['protest', 'conflict', 'natural', 'military'];
 
 const LANE_COLORS: Record<TimelineEvent['lane'], string> = {
-  protest: '#ffaa00',
-  conflict: '#ff4444',
-  natural: '#b478ff',
-  military: '#64b4ff',
+  protest: '#eab308',
+  conflict: '#ef4444',
+  natural: '#a855f7',
+  military: '#4d94ff',
 };
 
 const SEVERITY_RADIUS: Record<string, number> = {

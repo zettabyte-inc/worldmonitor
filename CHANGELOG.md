@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to World Monitor are documented here.
+All notable changes to Zettabyte Monitor are documented here.
 
 ## [2.6.0] - 2026-03-09
 

@@ -11,8 +11,8 @@
     <meta name="title" content="Zettabyte Monitor - Real-Time Global Intelligence Dashboard" />
     <meta name="description" content="AI-powered real-time global intelligence dashboard with live news, markets, military tracking, infrastructure monitoring, and geopolitical data. OSINT in one view." />
     <meta name="keywords" content="AI intelligence, AI-powered dashboard, global intelligence, geopolitical dashboard, world news, market data, military bases, nuclear facilities, undersea cables, conflict zones, real-time monitoring, situation awareness, OSINT, flight tracking, AIS ships, earthquake monitor, protest tracker, power outages, oil prices, government spending, polymarket predictions" />
-    <meta name="author" content="Elie Habib" />
-    <meta name="theme-color" content="#0f0f0e" />
+    <meta name="author" content="World Monitor" />
+    <meta name="theme-color" content="#f5f4f1" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.worldmonitor.app/" />
     <link rel="alternate" hreflang="x-default" href="https://www.worldmonitor.app/" />
@@ -83,12 +83,10 @@
         { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Pro (Waitlist)", "url": "https://www.worldmonitor.app/pro" }
       ],
       "author": {
-        "@type": "Person",
-        "name": "Elie Habib",
-        "url": "https://x.com/eliehabib",
-        "jobTitle": "CEO",
-        "worksFor": { "@type": "Organization", "name": "Anghami", "url": "https://anghami.com" },
-        "sameAs": ["https://x.com/eliehabib", "https://github.com/koala73"]
+        "@type": "Organization",
+        "name": "World Monitor",
+        "url": "https://www.worldmonitor.app",
+        "sameAs": ["https://x.com/worldmonitorai", "https://github.com/koala73"]
       },
       "featureList": [
         "Real-time conflict tracking (ACLED, UCDP)",
@@ -111,7 +109,6 @@
       "sameAs": [
         "https://github.com/koala73/worldmonitor",
         "https://x.com/worldmonitorai",
-        "https://x.com/eliehabib",
         "https://www.wired.me/story/the-music-streaming-ceo-who-built-a-global-war-map"
       ],
       "keywords": "OSINT dashboard, geopolitical monitoring, real-time intelligence, conflict tracker, threat intelligence, ADS-B tracking, AIS ship tracking, global risk monitoring, situational awareness"
@@ -126,7 +123,7 @@
 
 
     <!-- Theme: apply stored preference before first paint to prevent FOUC -->
-    <script>(function(){try{var h=location.hostname;var v;if(h.startsWith('happy.'))v='happy';else if(h.startsWith('tech.'))v='tech';else if(h.startsWith('finance.'))v='finance';if(!v&&(h==='localhost'||h==='127.0.0.1'||'__TAURI_INTERNALS__' in window))v=localStorage.getItem('zettabyte-variant');if(v)document.documentElement.dataset.variant=v;else document.documentElement.removeAttribute('data-variant');var t=localStorage.getItem('zettabyte-theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t;}else if(v==='happy'){document.documentElement.dataset.theme='light';}}catch(e){}document.documentElement.classList.add('no-transition');})()</script>
+    <script>(function(){try{var h=location.hostname;var v;if(h.startsWith('happy.'))v='happy';else if(h.startsWith('tech.'))v='tech';else if(h.startsWith('finance.'))v='finance';if(!v&&(h==='localhost'||h==='127.0.0.1'||'__TAURI_INTERNALS__' in window))v=localStorage.getItem('zettabyte-variant');if(v)document.documentElement.dataset.variant=v;else document.documentElement.removeAttribute('data-variant');var t=localStorage.getItem('zettabyte-theme');if(t==='dark'||t==='light'){document.documentElement.dataset.theme=t;}else{document.documentElement.dataset.theme='light';}}catch(e){}document.documentElement.classList.add('no-transition');})()</script>
 
     <!-- Critical CSS: inline skeleton visible before JS boots -->
     <style>
@@ -165,30 +162,30 @@
       [data-theme="light"] .skeleton-line{background:linear-gradient(90deg,rgba(0,0,0,.03) 25%,rgba(0,0,0,.06) 50%,rgba(0,0,0,.03) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
 
       /* ---------- skeleton shell (happy variant — light) ---------- */
-      [data-variant="happy"] .skeleton-shell{background:#FAFAF5;font-family:'Nunito',system-ui,sans-serif}
-      [data-variant="happy"] .skeleton-header{background:#FFFFFF;border-bottom-color:#DDD9CF}
-      [data-variant="happy"] .skeleton-pill{background:#F2EFE8;border-radius:8px}
-      [data-variant="happy"] .skeleton-dot{background:#6B8F5E}
-      [data-variant="happy"] .skeleton-main{background:#FAFAF5}
-      [data-variant="happy"] .skeleton-map{border-color:#DDD9CF;background:#D4E6EC;border-radius:14px}
-      [data-variant="happy"] .skeleton-map-bar{background:#FFFFFF;border-bottom-color:#DDD9CF}
-      [data-variant="happy"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#B9CDA8 0%,#D4E6EC 100%);opacity:.3}
-      [data-variant="happy"] .skeleton-panel{background:#FFFFFF;border-color:#DDD9CF;border-radius:14px}
-      [data-variant="happy"] .skeleton-panel-header{border-bottom-color:#EBE8E0}
-      [data-variant="happy"] .skeleton-line{background:linear-gradient(90deg,rgba(107,143,94,.06) 25%,rgba(107,143,94,.12) 50%,rgba(107,143,94,.06) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+      [data-variant="happy"] .skeleton-shell{background:#FAF8F3;font-family:'Nunito',system-ui,sans-serif}
+      [data-variant="happy"] .skeleton-header{background:#FFFFFF;border-bottom-color:#E0D8C8}
+      [data-variant="happy"] .skeleton-pill{background:#F5F1EA;border-radius:8px}
+      [data-variant="happy"] .skeleton-dot{background:#B89830}
+      [data-variant="happy"] .skeleton-main{background:#FAF8F3}
+      [data-variant="happy"] .skeleton-map{border-color:#E0D8C8;background:#EDE8DC;border-radius:14px}
+      [data-variant="happy"] .skeleton-map-bar{background:#FFFFFF;border-bottom-color:#E0D8C8}
+      [data-variant="happy"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#D6D0C0 0%,#EDE8DC 100%);opacity:.3}
+      [data-variant="happy"] .skeleton-panel{background:#FFFFFF;border-color:#E0D8C8;border-radius:14px}
+      [data-variant="happy"] .skeleton-panel-header{border-bottom-color:#EBE6DA}
+      [data-variant="happy"] .skeleton-line{background:linear-gradient(90deg,rgba(196,163,90,.05) 25%,rgba(196,163,90,.10) 50%,rgba(196,163,90,.05) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
 
       /* ---------- skeleton shell (happy variant — dark) ---------- */
-      [data-variant="happy"][data-theme="dark"] .skeleton-shell{background:#1A2332}
-      [data-variant="happy"][data-theme="dark"] .skeleton-header{background:#222E3E;border-bottom-color:#344050}
-      [data-variant="happy"][data-theme="dark"] .skeleton-pill{background:#2A3848}
-      [data-variant="happy"][data-theme="dark"] .skeleton-dot{background:#8BAF7A}
-      [data-variant="happy"][data-theme="dark"] .skeleton-main{background:#1A2332}
-      [data-variant="happy"][data-theme="dark"] .skeleton-map{border-color:#344050;background:#16202E}
-      [data-variant="happy"][data-theme="dark"] .skeleton-map-bar{background:#222E3E;border-bottom-color:#344050}
-      [data-variant="happy"][data-theme="dark"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#2D4035 0%,#16202E 100%);opacity:.3}
-      [data-variant="happy"][data-theme="dark"] .skeleton-panel{background:#222E3E;border-color:#344050}
-      [data-variant="happy"][data-theme="dark"] .skeleton-panel-header{border-bottom-color:#283545}
-      [data-variant="happy"][data-theme="dark"] .skeleton-line{background:linear-gradient(90deg,rgba(139,175,122,.05) 25%,rgba(139,175,122,.10) 50%,rgba(139,175,122,.05) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
+      [data-variant="happy"][data-theme="dark"] .skeleton-shell{background:#1A1814}
+      [data-variant="happy"][data-theme="dark"] .skeleton-header{background:#201E18;border-bottom-color:#3E382E}
+      [data-variant="happy"][data-theme="dark"] .skeleton-pill{background:#28251E}
+      [data-variant="happy"][data-theme="dark"] .skeleton-dot{background:#D4A03A}
+      [data-variant="happy"][data-theme="dark"] .skeleton-main{background:#1A1814}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map{border-color:#3E382E;background:#201E18}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-bar{background:#28251E;border-bottom-color:#3E382E}
+      [data-variant="happy"][data-theme="dark"] .skeleton-map-body::after{background:radial-gradient(ellipse 60% 50% at 50% 50%,#3A3020 0%,#201E18 100%);opacity:.3}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel{background:#28251E;border-color:#3E382E}
+      [data-variant="happy"][data-theme="dark"] .skeleton-panel-header{border-bottom-color:#322E26}
+      [data-variant="happy"][data-theme="dark"] .skeleton-line{background:linear-gradient(90deg,rgba(212,179,106,.04) 25%,rgba(212,179,106,.08) 50%,rgba(212,179,106,.04) 75%);background-size:200% 100%;animation:skel-shimmer 1.5s infinite}
     </style>
 
     <!-- Preconnect: map tiles + assets -->

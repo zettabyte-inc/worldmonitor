@@ -18,18 +18,18 @@ export const REFRESH_INTERVALS = {
   ais: 15 * 60 * 1000,
 };
 
-// Monitor colors - shared
+// Monitor colors — refined Zettabyte palette
 export const MONITOR_COLORS = [
-  '#44ff88',
-  '#ff8844',
-  '#4488ff',
-  '#ff44ff',
-  '#ffff44',
-  '#ff4444',
-  '#44ffff',
-  '#88ff44',
-  '#ff88ff',
-  '#88ffff',
+  '#34d399',
+  '#f59e0b',
+  '#4d94ff',
+  '#a855f7',
+  '#eab308',
+  '#ef4444',
+  '#22d3ee',
+  '#22c55e',
+  '#c084fc',
+  '#6aadff',
 ];
 
 // Storage keys - shared

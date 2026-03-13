@@ -395,61 +395,9 @@ function sebufApiPlugin(): Plugin {
   };
 }
 
-// RSS proxy allowlist — duplicated from api/rss-proxy.js for dev mode.
-// Keep in sync when adding new domains.
-const RSS_PROXY_ALLOWED_DOMAINS = new Set([
-  'feeds.bbci.co.uk', 'www.theguardian.com', 'feeds.npr.org', 'news.google.com',
-  'www.aljazeera.com', 'rss.cnn.com', 'hnrss.org', 'feeds.arstechnica.com',
-  'www.theverge.com', 'www.cnbc.com', 'feeds.marketwatch.com', 'www.defenseone.com',
-  'breakingdefense.com', 'www.bellingcat.com', 'techcrunch.com', 'huggingface.co',
-  'www.technologyreview.com', 'rss.arxiv.org', 'export.arxiv.org',
-  'www.federalreserve.gov', 'www.sec.gov', 'www.whitehouse.gov', 'www.state.gov',
-  'www.defense.gov', 'home.treasury.gov', 'www.justice.gov', 'tools.cdc.gov',
-  'www.fema.gov', 'www.dhs.gov', 'www.thedrive.com', 'krebsonsecurity.com',
-  'finance.yahoo.com', 'thediplomat.com', 'venturebeat.com', 'foreignpolicy.com',
-  'www.ft.com', 'openai.com', 'www.reutersagency.com', 'feeds.reuters.com',
-  'asia.nikkei.com', 'www.cfr.org', 'www.csis.org', 'www.politico.com',
-  'www.brookings.edu', 'layoffs.fyi', 'www.defensenews.com', 'www.militarytimes.com',
-  'taskandpurpose.com', 'news.usni.org', 'www.oryxspioenkop.com', 'www.gov.uk',
-  'www.foreignaffairs.com', 'www.atlanticcouncil.org',
-  // Tech variant
-  'www.zdnet.com', 'www.techmeme.com', 'www.darkreading.com', 'www.schneier.com',
-  'rss.politico.com', 'www.anandtech.com', 'www.tomshardware.com', 'www.semianalysis.com',
-  'feed.infoq.com', 'thenewstack.io', 'devops.com', 'dev.to', 'lobste.rs', 'changelog.com',
-  'seekingalpha.com', 'news.crunchbase.com', 'www.saastr.com', 'feeds.feedburner.com',
-  'www.producthunt.com', 'www.axios.com', 'api.axios.com', 'github.blog', 'githubnext.com',
-  'mshibanami.github.io', 'www.engadget.com', 'news.mit.edu', 'dev.events',
-  'www.ycombinator.com', 'a16z.com', 'review.firstround.com', 'www.sequoiacap.com',
-  'www.nfx.com', 'www.aaronsw.com', 'bothsidesofthetable.com', 'www.lennysnewsletter.com',
-  'stratechery.com', 'www.eu-startups.com', 'tech.eu', 'sifted.eu', 'www.techinasia.com',
-  'kr-asia.com', 'techcabal.com', 'disrupt-africa.com', 'lavca.org', 'contxto.com',
-  'inc42.com', 'yourstory.com', 'pitchbook.com', 'www.cbinsights.com', 'www.techstars.com',
-  // Regional & international
-  'english.alarabiya.net', 'www.arabnews.com', 'www.timesofisrael.com', 'www.haaretz.com',
-  'www.scmp.com', 'kyivindependent.com', 'www.themoscowtimes.com', 'feeds.24.com',
-  'feeds.capi24.com', 'www.france24.com', 'www.euronews.com', 'www.lemonde.fr',
-  'rss.dw.com', 'www.africanews.com', 'www.lasillavacia.com', 'www.channelnewsasia.com',
-  'www.thehindu.com', 'news.un.org', 'www.iaea.org', 'www.who.int', 'www.cisa.gov',
-  'www.crisisgroup.org',
-  // Think tanks
-  'rusi.org', 'warontherocks.com', 'www.aei.org', 'responsiblestatecraft.org',
-  'www.fpri.org', 'jamestown.org', 'www.chathamhouse.org', 'ecfr.eu', 'www.gmfus.org',
-  'www.wilsoncenter.org', 'www.lowyinstitute.org', 'www.mei.edu', 'www.stimson.org',
-  'www.cnas.org', 'carnegieendowment.org', 'www.rand.org', 'fas.org',
-  'www.armscontrol.org', 'www.nti.org', 'thebulletin.org', 'www.iss.europa.eu',
-  // Economic & Food Security
-  'www.fao.org', 'worldbank.org', 'www.imf.org',
-  // Regional locale feeds
-  'www.hurriyet.com.tr', 'tvn24.pl', 'www.polsatnews.pl', 'www.rp.pl', 'meduza.io',
-  'novayagazeta.eu', 'www.bangkokpost.com', 'vnexpress.net', 'www.abc.net.au',
-  'news.ycombinator.com',
-  // Finance variant
-  'www.coindesk.com', 'cointelegraph.com',
-  // Happy variant — positive news sources
-  'www.goodnewsnetwork.org', 'www.positive.news', 'reasonstobecheerful.world',
-  'www.optimistdaily.com', 'www.sunnyskyz.com', 'www.huffpost.com',
-  'www.sciencedaily.com', 'feeds.nature.com', 'www.livescience.com', 'www.newscientist.com',
-]);
+// RSS proxy allowlist — single source of truth in shared/rss-allowed-domains.json.
+import allowedDomainsJson from './shared/rss-allowed-domains.json';
+const RSS_PROXY_ALLOWED_DOMAINS = new Set(allowedDomainsJson as string[]);
 
 function rssProxyPlugin(): Plugin {
   return {
@@ -590,10 +538,8 @@ function gpsjamDevPlugin(): Plugin {
           res.setHeader('Cache-Control', 'no-cache');
           res.end(data);
         } catch {
-          res.statusCode = 503;
-          res.setHeader('Content-Type', 'application/json');
-          res.setHeader('Cache-Control', 'no-cache');
-          res.end(JSON.stringify({ error: 'No GPS jam data. Run: node scripts/fetch-gpsjam.mjs' }));
+          // No local data — fall through to the catch-all production proxy
+          return next();
         }
       });
     },

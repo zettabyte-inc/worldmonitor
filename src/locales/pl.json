@@ -761,7 +761,7 @@
       "empty": "Brak najnowszych artykułów na ten temat"
     },
     "geoHubs": {
-      "tooltip": "<strong>Centra aktywności geopolitycznej</strong><br>Pokazuje regiony o największej aktywności informacyjnej.<br><br><em>Typy ośrodków:</em><br>• 🏛️Stolice — stolice świata i centra rządowe<br>• ⚔️ Strefy konfliktu — obszary aktywnego konfliktu<br>• ⚓ Strategiczne — wąskie gardła i kluczowe regiony<br>• 🏢 Organizacje — ONZ, NATO, MAEA itp.<br><br><em>Poziomy aktywności:</em><br>• <span style=\"color: #ff4444\">Wysoki </span> — Najświeższe informacje lub wynik 70+<br>• <span style=\"color: #ff8844\">Podwyższony</span> — Wynik 40-69<br>• <span style=\"color: #888\">Niski</span> — Wynik poniżej 40<br><br>Kliknij koncentrator, aby powiększyć jego lokalizację.",
+      "tooltip": "<strong>Centra aktywności geopolitycznej</strong><br>Pokazuje regiony o największej aktywności informacyjnej.<br><br><em>Typy ośrodków:</em><br>• 🏛️Stolice — stolice świata i centra rządowe<br>• ⚔️ Strefy konfliktu — obszary aktywnego konfliktu<br>• ⚓ Strategiczne — wąskie gardła i kluczowe regiony<br>• 🏢 Organizacje — ONZ, NATO, MAEA itp.<br><br><em>Poziomy aktywności:</em><br>• <span style=\"color: #ef4444\">Wysoki </span> — Najświeższe informacje lub wynik 70+<br>• <span style=\"color: #f59e0b\">Podwyższony</span> — Wynik 40-69<br>• <span style=\"color: #888\">Niski</span> — Wynik poniżej 40<br><br>Kliknij koncentrator, aby powiększyć jego lokalizację.",
       "noActive": "Brak aktywnych węzłów geopolitycznych",
       "story": "historia",
       "stories": "historie",

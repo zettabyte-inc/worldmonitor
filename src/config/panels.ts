@@ -922,18 +922,18 @@ export const PANEL_CATEGORY_MAP: Record<string, { labelKey: string; panelKeys: s
   },
 };
 
-// Monitor palette — fixed category colors persisted to localStorage (not theme-dependent)
+// Monitor palette — refined Zettabyte palette, persisted to localStorage (not theme-dependent)
 export const MONITOR_COLORS = [
-  '#44ff88',
-  '#ff8844',
-  '#4488ff',
-  '#ff44ff',
-  '#ffff44',
-  '#ff4444',
-  '#44ffff',
-  '#88ff44',
-  '#ff88ff',
-  '#88ffff',
+  '#34d399',
+  '#f59e0b',
+  '#4d94ff',
+  '#a855f7',
+  '#eab308',
+  '#ef4444',
+  '#22d3ee',
+  '#22c55e',
+  '#c084fc',
+  '#6aadff',
 ];
 
 export const STORAGE_KEYS = {

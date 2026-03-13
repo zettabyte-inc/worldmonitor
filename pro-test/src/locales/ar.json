@@ -23,7 +23,7 @@
     "windowTitle": "worldmonitor.app — لوحة معلومات مباشرة",
     "openFullScreen": "فتح بملء الشاشة",
     "tryLiveDashboard": "جرّب لوحة المعلومات المباشرة",
-    "iframeTitle": "World Monitor — لوحة معلومات OSINT مباشرة",
+    "iframeTitle": "Zettabyte Monitor — لوحة معلومات OSINT مباشرة",
     "description": "كرة أرضية ثلاثية الأبعاد WebGL · أكثر من 45 طبقة خريطة تفاعلية · بيانات جغرافية سياسية ومالية وطاقة وبنية تحتية فورية"
   },
   "socialProof": {
@@ -36,7 +36,7 @@
     "asToldTo": "كما رواها لـ"
   },
   "dataCoverage": {
-    "title": "ما الذي يتتبّعه World Monitor",
+    "title": "ما الذي يتتبّعه Zettabyte Monitor",
     "subtitle": "22 نطاق خدمة يتم استيعابها في آنٍ واحد. كل شيء موحّد ومحدّد جغرافيًا ومعروض على كرة أرضية WebGL بآلاف العلامات.",
     "geopolitical": "أحداث جيوسياسية",
     "geopoliticalDesc": "أحداث ACLED و UCDP مع تقييم التصعيد وتحليل الاتجاهات",
@@ -118,7 +118,7 @@
   "apiSection": {
     "apiTier": "فئة API",
     "title": "استخبارات برمجية",
-    "subtitle": "للمطوّرين والمحلّلين والفرق التي تبني على بيانات World Monitor. منفصلة عن Pro — استخدم كليهما أو أيًا منهما.",
+    "subtitle": "للمطوّرين والمحلّلين والفرق التي تبني على بيانات Zettabyte Monitor. منفصلة عن Pro — استخدم كليهما أو أيًا منهما.",
     "restApi": "REST API عبر جميع نطاقات الخدمة الـ 22",
     "authenticated": "مصادقة لكل مفتاح، مع حدود استخدام لكل فئة",
     "structured": "JSON منظّم مع ترويسات تخزين مؤقت ووثائق OpenAPI 3.1",
@@ -137,7 +137,7 @@
     "security": "أمان بمستوى حكومي",
     "securityDesc": "نشر معزول، Docker داخلي، مستأجر سحابي مخصّص، مسار SOC 2 Type II، SSO/MFA، وسجل تدقيق كامل.",
     "aiAgents": "وكلاء ذكاء اصطناعي و MCP",
-    "aiAgentsDesc": "وكلاء استخبارات مستقلّون مع شخصيات مستثمرين. اربط World Monitor كأداة بـ Claude أو GPT أو نماذج LLM مخصّصة عبر MCP.",
+    "aiAgentsDesc": "وكلاء استخبارات مستقلّون مع شخصيات مستثمرين. اربط Zettabyte Monitor كأداة بـ Claude أو GPT أو نماذج LLM مخصّصة عبر MCP.",
     "dataLayers": "طبقات بيانات موسّعة",
     "dataLayersDesc": "عشرات الآلاف من أصول البنية التحتية مرسومة عالميًا. تكامل صور الأقمار الاصطناعية مع كشف التغيير و SAR.",
     "connectors": "أكثر من 100 موصّل بيانات",
@@ -236,8 +236,8 @@
     "linkedin": "LinkedIn",
     "whatsapp": "WhatsApp",
     "telegram": "Telegram",
-    "shareText": "انضممت للتو إلى قائمة انتظار World Monitor Pro — استخبارات عالمية فورية مدعومة بالذكاء الاصطناعي. انضم إليّ:",
-    "joinWaitlistShare": "انضم إلى قائمة انتظار World Monitor Pro:",
+    "shareText": "انضممت للتو إلى قائمة انتظار Zettabyte Monitor Pro — استخبارات عالمية فورية مدعومة بالذكاء الاصطناعي. انضم إليّ:",
+    "joinWaitlistShare": "انضم إلى قائمة انتظار Zettabyte Monitor Pro:",
     "youreIn": "أنت مسجّل!",
     "invitedBanner": "تمت دعوتك — انضم إلى قائمة الانتظار"
   }

@@ -1,6 +1,6 @@
-# Contributing to World Monitor
+# Contributing to Zettabyte Monitor
 
-Thank you for your interest in contributing to World Monitor! This project thrives on community contributions — whether it's code, data sources, documentation, or bug reports.
+Thank you for your interest in contributing to Zettabyte Monitor! This project thrives on community contributions — whether it's code, data sources, documentation, or bug reports.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ Thank you for your interest in contributing to World Monitor! This project thriv
 
 ## Architecture Overview
 
-World Monitor is a real-time OSINT dashboard built with **Vanilla TypeScript** (no UI framework), **MapLibre GL + deck.gl** for map rendering, and a custom Proto-first RPC framework called **Sebuf** for all API communication.
+Zettabyte Monitor is a real-time OSINT dashboard built with **Vanilla TypeScript** (no UI framework), **MapLibre GL + deck.gl** for map rendering, and a custom Proto-first RPC framework called **Sebuf** for all API communication.
 
 ### Key Technologies
 
@@ -128,7 +128,7 @@ See [API Dependencies](docs/DOCUMENTATION.md#api-dependencies) for the full list
 - **Performance optimizations** — faster loading, better caching
 - **Documentation** — improve docs, add examples, fix typos
 - **Accessibility** — make the dashboard usable by everyone
-- **Internationalization** — help make World Monitor available in more languages
+- **Internationalization** — help make Zettabyte Monitor available in more languages
 - **Tests** — add unit or integration tests
 
 ### What We're Especially Looking For
@@ -307,4 +307,4 @@ This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.
 
 ---
 
-Thank you for helping make World Monitor better! 🌍
+Thank you for helping make Zettabyte Monitor better! 🌍

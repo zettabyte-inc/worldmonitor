@@ -13,6 +13,7 @@ export const SITE_VARIANT: string = (() => {
   if (h.startsWith('finance.')) return 'finance';
   if (h.startsWith('happy.')) return 'happy';
   if (h.startsWith('commodity.')) return 'commodity';
+  if (h === 'zintelligence.vercel.app') return 'tech';
 
   if (h === 'localhost' || h === '127.0.0.1') {
     const stored = localStorage.getItem('zettabyte-variant');

@@ -41,7 +41,7 @@ export const VARIANT_META: { full: VariantMeta; [k: string]: VariantMeta } = {
     title: 'Zettabyte Tech - Real-Time AI & Tech Industry Dashboard',
     description: 'Real-time AI and tech industry dashboard tracking tech giants, AI labs, startup ecosystems, funding rounds, and tech events worldwide.',
     keywords: 'tech dashboard, AI industry, startup ecosystem, tech companies, AI labs, venture capital, tech events, tech conferences, cloud infrastructure, datacenters, tech layoffs, funding rounds, unicorns, FAANG, tech HQ, accelerators, Y Combinator, tech news',
-    url: 'https://tech.worldmonitor.app/',
+    url: 'https://zintelligence.vercel.app/',
     siteName: 'Zettabyte Tech',
     shortName: 'ZettabyteTech',
     subject: 'AI, Tech Industry, and Startup Ecosystem Intelligence',

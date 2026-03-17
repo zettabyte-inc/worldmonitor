@@ -13,6 +13,7 @@ const SOCIAL_IMAGE_UA =
 
 const VARIANT_HOST_MAP: Record<string, string> = {
   'tech.worldmonitor.app': 'tech',
+  'zintelligence.vercel.app': 'tech',
   'finance.worldmonitor.app': 'finance',
   'happy.worldmonitor.app': 'happy',
 };
@@ -22,8 +23,8 @@ const VARIANT_OG: Record<string, { title: string; description: string; image: st
   tech: {
     title: 'Tech Monitor - Real-Time AI & Tech Industry Dashboard',
     description: 'Real-time AI and tech industry dashboard tracking tech giants, AI labs, startup ecosystems, funding rounds, and tech events worldwide.',
-    image: 'https://tech.worldmonitor.app/favico/tech/og-image.png',
-    url: 'https://tech.worldmonitor.app/',
+    image: 'https://zintelligence.vercel.app/favico/tech/og-image.png',
+    url: 'https://zintelligence.vercel.app/',
   },
   finance: {
     title: 'Finance Monitor - Real-Time Markets & Trading Dashboard',
